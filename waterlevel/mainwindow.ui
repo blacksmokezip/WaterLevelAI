@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(
+                spread:pad, x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgba(85, 0, 255, 255),
+                stop:1 rgba(170, 85, 255, 255)
+            );</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+            color: white;
+            font-size: 12pt;
+        }</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="4">
+     <widget class="QWidget" name="plotWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>1200</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QTableWidget" name="waterLevel">
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QDateEdit" name="dateFrom">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Начало</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="generate">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>Предсказать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QDateEdit" name="dateTo">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Конец</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
