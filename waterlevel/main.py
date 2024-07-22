@@ -6,7 +6,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from PyQt6 import QtWidgets
 
-from mainwindow import Ui_MainWindow
+from ui_form import Ui_MainWindow
 
 
 class MplCanvas(FigureCanvas):
